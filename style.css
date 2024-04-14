@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#calculadora{
+    display: flex;
+    background-color: rgb(62, 62, 62);
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.teclas_geral{
+    
+    height: 50px;
+    width: 80px;
+    background-color: green;
+}
+
+input.teclas_operacoes-1{
+margin-top: 40px;
+}
+
+.operacao_especial+.operacoes{
+background-color: blue;
+}

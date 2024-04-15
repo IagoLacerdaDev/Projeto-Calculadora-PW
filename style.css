@@ -1,22 +1,47 @@
 *{
+    font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
 }
 
+.ligar{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 40px;
+    border-radius: 200%;
+    text-align: center;
+    background-color: green;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
 #calculadora{
     display: flex;
-    background-color: rgb(62, 62, 62);
-    width: 600px;
-    height: 400px;
-    margin: auto;
+    background-color: rgb(100, 99, 99);
+    width: 400px; 
+    height: 4%;
+    margin: 0 auto;
     flex-direction: column;
+    border-radius: 25px;
     align-items: center;
 }
 
-input.teclas_geral{
-    
+#visor{
+    margin-top: 5px;
+    background-color: rgba(106, 106, 106, 0.133);
+    border: 2px solid;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+
+.teclas_geral{
+    font-size: 18px;    
     height: 50px;
-    width: 80px;
+    width: 50px;
+    margin: 7px;
     background-color: green;
 }
 
@@ -24,6 +49,35 @@ input.teclas_operacoes-1{
 margin-top: 40px;
 }
 
-.operacao_especial+.operacoes{
-background-color: blue;
+.numeros{
+background-color:rgb(183, 183, 183) ;
 }
+.operacoes{
+    background-color: rgb(31, 31, 131);
+}
+.operacao_especial{
+    background-color:rgb(183, 183, 183) ;
+}
+
+/* Estilizar a segunda Section (Memoria) que ira armazenar as contas realizadas */
+
+#memoria{
+    width: 150px;
+    margin-left: 30px;
+    border: 3px solid;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: papayawhip;
+    font-weight: bolder;
+}
+
+#lista_memoria{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 7px;
+}
+
+
+

@@ -14,30 +14,69 @@
 </head>
 
 <body>
-    <!-- Definindo botão para ligar e desligar -->
-    <input type="button" class="ligar" value="ON/OFF" > 
-    
-<!-- Resumindo as classes | Operacao especial = Diferente das contas basicas | Operacoes = Operadores padroes | Numeros = teclas que fazem parte das contas  -->
+    <section id="geral">
 
+        <!-- Definindo botão para ligar e desligar -->
+        <input type="button" class="ligar" value="ON/OFF" > 
+        
+        <!-- Resumindo as classes | Operacao especial = Diferente das contas basicas | Operacoes = Operadores padroes | Numeros = teclas que fazem parte das contas  -->
+        
+        
+        <section id="calculadora">
+            <!-- Definindo o visor -->
+            <div id="visor"><input type="text" disabled class="visor_input"> </div>
 
-    <section id="calculadora">
-        <!-- Definindo o visor -->
-        <div id="visor"><input type="text" class="visor_input"> </div>
-        <div class=" fileira 1   teclas_operacoes-1" style="margin-top: 3%;"> <input type="button" class=" teclas_geral operacao_especial" value="%">   <input type="button" class=" teclas_geral operacao_especial" value="C">  <input type="button" class=" teclas_geral operacao_especial" value="CE">  <input type="button" class=" teclas_geral operacoes" value="←">   </div>
-    <div class=" fileira 2  teclas_operacoes 2"> <input type="button" class=" teclas_geral operacao_especial" value="1/x"> <input type="button" class=" teclas_geral operacao_especial" value="x²"><input type="button" class=" teclas_geral operacao_especial" value=" √x">    <input type="button" class=" teclas_geral operacoes" value="/">  </div>
-        <div class="   fileira 3"> <input class=" teclas_geral numeros"   type="button" value="1"> <input  class=" teclas_geral numeros"  type="button" value="2"> <input type="button"  class=" teclas_geral numeros"  value="3"> <input type="button" class=" teclas_geral operacoes" value="+"> </div>
-        <div class="   fileira 4"> <input class=" teclas_geral numeros"   type="button" value="4"> <input  class=" teclas_geral numeros"  type="button" value="5"> <input type="button"  class=" teclas_geral numeros"  value="6"> <input type="button" class=" teclas_geral operacoes" value="-"> </div>
-        <div class="   fileira 5"> <input class=" teclas_geral numeros"   type="button" value="7"> <input  class=" teclas_geral numeros"  type="button" value="8"> <input type="button"  class=" teclas_geral numeros"  value="9"> <input type="button" class=" teclas_geral operacoes" value="*"> </div>
-        <div class="   fileira 6"> <input class=" teclas_geral numeros"   type="button" value="."> <input  class=" teclas_geral numeros"  type="button" value="0"> <input type="button"  class=" teclas_geral operacoes"  value="+/-"> <input type="button" class=" teclas_geral operacao resultado" value="="> </div>
-     
+            <div class=" fileira 1   teclas_operacoes-1" style="margin-top: 3%;"> 
+                <input type="button" class=" teclas_geral operacao_especial" value="%">
+                  <input type="button" class=" teclas_geral operacao_especial" value="C"> 
+                   <input type="button" class=" teclas_geral operacao_especial" value="CE"> 
+                    <input type="button" class=" teclas_geral operacoes" value="←"> 
+                  </div>
+
+            <div class=" fileira 2  teclas_operacoes 2">
+                 <input type="button" class=" teclas_geral operacao_especial" value="1/x"> 
+                 <input type="button" class=" teclas_geral operacao_especial" value="x²">
+                 <input type="button" class=" teclas_geral operacao_especial" value=" √x">
+                     <input type="button" class=" teclas_geral operacoes" value="/"> 
+                    </div>
+
+            <div class="   fileira 3"> <input class=" teclas_geral numeros"   type="button" value="1"> 
+                <input  class=" teclas_geral numeros"  type="button" value="2"> 
+                <input type="button"  class=" teclas_geral numeros"  value="3"> 
+                <input type="button" class=" teclas_geral operacoes" value="+"> 
+            </div>
+
+            <div class="   fileira 4"> <input class=" teclas_geral numeros"   type="button" value="4"> 
+                <input  class=" teclas_geral numeros"  type="button" value="5"> 
+                <input type="button"  class=" teclas_geral numeros"  value="6">
+                 <input type="button" class=" teclas_geral operacoes" value="-"> 
+                </div>
+
+        <div class="   fileira 5"> <input class=" teclas_geral numeros"   type="button" value="7"> 
+            <input  class=" teclas_geral numeros"  type="button" value="8"> 
+            <input type="button"  class=" teclas_geral numeros"  value="9"> 
+            <input type="button" class=" teclas_geral operacoes" value="*"> 
+        </div>
+
+        <div class="   fileira 6"> <input class=" teclas_geral numeros"   type="button" value=".">
+             <input  class=" teclas_geral numeros"  type="button" value="0"> 
+             <input type="button"  class=" teclas_geral operacoes"  value="+/-"> 
+             <input type="button" class=" teclas_geral operacao resultado" value="="> 
+            </div>
+        
+
     </section>
-<!-- Local onde irá guardar a memória -->
+    <!-- Local onde irá guardar a memória -->
     <section id="memoria">
-<h3>Nenória</h3>
-<ul id="guardar_memoria">
-
-</ul>
-
+        <h3>Memória</h3>
+        <ul id="guardar_memoria">
+            
+        </ul>
+        
     </section>
+
+</section>
 </body>
+
+<script src="script.js"></script>
 </html>

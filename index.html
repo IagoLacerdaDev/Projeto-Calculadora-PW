@@ -8,75 +8,67 @@
     <link rel="shortcut icon" href="imagens/icon calculadora.png" type="image/x-icon">
     <!-- Fonte Google Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <section id="geral">
-
         <!-- Definindo botão para ligar e desligar -->
-        <input type="button" class="ligar" value="ON/OFF" > 
-        
+        <input type="button" id="ligar" value="ON/OFF"> 
         <!-- Resumindo as classes | Operacao especial = Diferente das contas basicas | Operacoes = Operadores padroes | Numeros = teclas que fazem parte das contas  -->
-        
-        
         <section id="calculadora">
             <!-- Definindo o visor -->
-            <div id="visor"><input type="text" disabled class="visor_input"> </div>
-
-            <div class=" fileira 1   teclas_operacoes-1" style="margin-top: 3%;"> 
-                <input type="button" class=" teclas_geral operacao_especial" value="%">
-                  <input type="button" class=" teclas_geral operacao_especial" value="C"> 
-                   <input type="button" class=" teclas_geral operacao_especial" value="CE"> 
-                    <input type="button" class=" teclas_geral operacoes" value="←"> 
-                  </div>
-
-            <div class=" fileira 2  teclas_operacoes 2">
-                 <input type="button" class=" teclas_geral operacao_especial" value="1/x"> 
-                 <input type="button" class=" teclas_geral operacao_especial" value="x²">
-                 <input type="button" class=" teclas_geral operacao_especial" value=" √x">
-                     <input type="button" class=" teclas_geral operacoes" value="/"> 
-                    </div>
-
-            <div class="   fileira 3"> <input class=" teclas_geral numeros"   type="button" value="1"> 
-                <input  class=" teclas_geral numeros"  type="button" value="2"> 
-                <input type="button"  class=" teclas_geral numeros"  value="3"> 
-                <input type="button" class=" teclas_geral operacoes" value="+"> 
+            <div id="visor"><input type="text" disabled class="visor input"> </div>
+            <div class="fileira teclas_memoria">
+                <input type="button" class="teclas_geral memoria" value="M+">
+                <input type="button" class="teclas_geral memoria" value="M-">
+                <input type="button" class="teclas_geral memoria" value="RM">
+                <input type="button" class="teclas_geral memoria" value="CLM">
             </div>
-
-            <div class="   fileira 4"> <input class=" teclas_geral numeros"   type="button" value="4"> 
-                <input  class=" teclas_geral numeros"  type="button" value="5"> 
-                <input type="button"  class=" teclas_geral numeros"  value="6">
-                 <input type="button" class=" teclas_geral operacoes" value="-"> 
-                </div>
-
-        <div class="   fileira 5"> <input class=" teclas_geral numeros"   type="button" value="7"> 
-            <input  class=" teclas_geral numeros"  type="button" value="8"> 
-            <input type="button"  class=" teclas_geral numeros"  value="9"> 
-            <input type="button" class=" teclas_geral operacoes" value="*"> 
-        </div>
-
-        <div class="   fileira 6"> <input class=" teclas_geral numeros"   type="button" value=".">
-             <input  class=" teclas_geral numeros"  type="button" value="0"> 
-             <input type="button"  class=" teclas_geral operacoes"  value="+/-"> 
-             <input type="button" class=" teclas_geral operacao resultado" value="="> 
+            <div class="fileira teclas_operacoes">
+                <input type="button" class="teclas_geral operacao_especial" value="%">
+                <input type="button" class="teclas_geral operacao_especial" value="C"> 
+                <input type="button" class="teclas_geral operacao_especial" value="CE"> 
+                <input type="button" class="teclas_geral operacoes" value="←"> 
             </div>
-        
-
+            <div class="fileira teclas_operacoes">
+                <input type="button" class="teclas_geral operacao_especial" value="1/x"> 
+                <input type="button" class="teclas_geral operacao_especial" value="x²">
+                <input type="button" class="teclas_geral operacao_especial" value=" √">
+                <input type="button" class="teclas_geral operacoes" value="/"> 
+            </div>
+            <div class="fileira teclas_numeros"> 
+                <input class="teclas_geral numeros" type="button" value="1"> 
+                <input class="teclas_geral numeros" type="button" value="2"> 
+                <input type="button" class="teclas_geral numeros" value="3"> 
+                <input type="button" class="teclas_geral operacoes" value="+"> 
+            </div>
+            <div class="fileira teclas_numeros"> 
+                <input class="teclas_geral numeros" type="button" value="4"> 
+                <input class="teclas_geral numeros" type="button" value="5"> 
+                <input type="button" class="teclas_geral numeros" value="6">
+                <input type="button" class="teclas_geral operacoes" value="-"> 
+            </div>
+            <div class="fileira teclas_numeros"> 
+                <input class="teclas_geral numeros" type="button" value="7"> 
+                <input class="teclas_geral numeros" type="button" value="8"> 
+                <input type="button" class="teclas_geral numeros" value="9"> 
+                <input type="button" class="teclas_geral operacoes" value="*"> 
+            </div>
+            <div class="fileira teclas_numeros"> 
+                <input class="teclas_geral numeros" type="button" value=".">
+                <input class="teclas_geral numeros" type="button" value="0"> 
+                <input type="button" class="teclas_geral operacoes" value="+/-"> 
+                <input type="button" class="teclas_geral operacao resultado" value="="> 
+            </div>
+        </section>
+        <!-- Local onde irá guardar a memória -->
+        <section id="memoria">
+            <h3>Memória</h3>
+            <ul id="guardar_memoria"></ul>
+        </section>
     </section>
-    <!-- Local onde irá guardar a memória -->
-    <section id="memoria">
-        <h3>Memória</h3>
-        <ul id="guardar_memoria">
-            
-        </ul>
-        
-    </section>
-
-</section>
 </body>
-
 <script src="script.js"></script>
 </html>
